@@ -31,8 +31,7 @@ let Paris = new Branch('Paris', 20, 38, 2.3);
 // console.log(Paris);
 let Lima = new Branch('Lima', 2, 16, 4.6);
 // console.log(Lima);
-let Amman=new Branch('Amman',6,35,2.6);
-// console.log(Amman);
+
 
 
 function NumOfCust(min, max, avg) {
@@ -155,7 +154,7 @@ function totalRaw() {
     Dubai.render();
     Paris.render();
     Lima.render();
-    Amman.render();
+    
     totalRaw();
 
 
