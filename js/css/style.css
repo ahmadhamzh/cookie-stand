@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #F2D3BF;
+    margin: 0 auto;
+    width: 90%;
+}
+header {
+    border: solid 5px;
+    display: inline-block;
+    width: 100%;    
+    margin-left: 30px;
+    background-color: #734F38;
+
+}
+header img {
+    width: 200px;
+    height: 75px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+header h1 {
+    position: absolute;
+    font-size: 30pt;
+    text-align: center;
+    margin: 40px 0 0 35%;
+
+}
+header nav ul  {
+    
+}
+
+header nav ul li {
+    margin: 10px 30px;
+    float: right;
+    
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #F2D3BF;
+ 
+}
+main {
+    border: solid 5px;
+}
