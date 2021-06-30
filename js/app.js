@@ -3,7 +3,7 @@
 const time = ['6:00 am', '7:00 am', '8:00 am', '9:00 am', '10:00 am', '11:00 am', '12:00 pm', '1:00 pm', '2:pm', '3:00 pm', '4:00 pm', '5:00 pm', '6:00 pm', '7:pm']
 // console.log(time);
 let theArrayShop = [];
-let shopName = [];
+
 
 function Branch(name, mincust, maxcust, AvgCookie) {
     this.name = name;
@@ -15,11 +15,11 @@ function Branch(name, mincust, maxcust, AvgCookie) {
     this.CookiePerHour = this.calc[1];
     this.sumCookies = this.calc[2];
     theArrayShop.push(this);
-    shopName.push(this.name);
+
 
 }
 // console.log(theArrayShop);
-console.log(shopName);
+// console.log(shopName);
 
 let Seattle = new Branch('Seattle', 23, 65, 6.3);
 // console.log(Seattle);
@@ -31,6 +31,9 @@ let Paris = new Branch('Paris', 20, 38, 2.3);
 // console.log(Paris);
 let Lima = new Branch('Lima', 2, 16, 4.6);
 // console.log(Lima);
+
+
+
 
 
 
@@ -140,29 +143,55 @@ function totalRaw() {
     let allBranchesCookiesPerDayData = document.createElement('td');
     headRaw.appendChild(allBranchesCookiesPerDayData);
     allBranchesCookiesPerDayData.textContent = allBranchesCookiesPerDay
-    
-
-
 }
-// for (let i = 0; i < shopName.length; i++) {
-    
-    //     shopName[i].render();
-    // };
-    
-    Seattle.render();
-    Tokyo.render();
-    Dubai.render();
-    Paris.render();
-    Lima.render();
-    
+
+const newShop = document.getElementById('newShopForm');
+newShop.addEventListener('submit', addShop)
+
+for (let i = 0; i < theArrayShop.length; i++) {
+
+    theArrayShop[i].render()
+
+};
+totalRaw();
+
+function addShop(events) {
+
+    events.preventDefault();
+    const newNameShop = events.target.shopName.value
+    console.log(newNameShop);
+    let newmincust = events.target.minCust.value
+    newmincust = parseInt(newmincust);
+    console.log(newmincust);
+    let newmaxcust = events.target.maxCust.value
+    newmaxcust = parseInt(newmaxcust);
+    console.log(newmaxcust);
+    let newavgCookies = events.target.avgCookies.value
+    newavgCookies = parseFloat(newavgCookies);
+    console.log(newavgCookies);
+    console.log(theArrayShop[0].name);
+
+    for (let i = 0; i < theArrayShop.length; i++) {
+
+
+        if (newNameShop == theArrayShop[i].name) {
+
+            alert('you already have this shop')
+
+            return
+        }
+    }
+
+
+
+    const newShop = new Branch(newNameShop, newmincust, newmaxcust, newavgCookies)
+    console.log(newShop);
+
+    Table.deleteRow(Table.rows.length - 1)
+    newShop.render();
+
+
     totalRaw();
-
-
-
-
-
-
-
-
+}
 
 
