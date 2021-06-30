@@ -3,16 +3,17 @@
 }
 body {
     background-color: #FAFAD0;
-    margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
 header {
     /* border: solid 5px; */
     display: inline-block;
     width: 100%;    
-    margin-left: 30px;
-    background-color: #635F4D;
+     background-color: #635F4D;
 
+}
+header nav {
+    width: 100%;
 }
 header img {
     width: 200px;
@@ -28,10 +29,8 @@ header h1 {
     margin: 40px 0 0 35%;
 
 }
-header nav ul  {
-    
-}
 
+    
 header nav ul li {
     margin: 10px 30px;
     float: right;
@@ -49,7 +48,7 @@ main {
     position: relative;
     display: inline-block;
     padding: 15px;
-    margin-left: 30px;
+    
 }
 #rightSide {
     width: 72%;
@@ -115,9 +114,7 @@ main {
 
 
 footer {
-    position: relative;
-    /* border: solid 5px; */
-    margin-left: 30px;
+    position: relative;    
     width: 100%;
     background-color: #635F4D ;
     height: 80px;
