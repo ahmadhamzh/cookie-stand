@@ -4,6 +4,7 @@
 body {
     background-color: #FAFAD0;
     width: 100%;
+    height: 100%;
 }
 header {
     /* border: solid 5px; */
@@ -24,9 +25,11 @@ header img {
 
 header h1 {
     position: absolute;
-    font-size: 30pt;
+    font-size: 60pt;
     text-align: center;
-    margin: 40px 0 0 35%;
+    margin: 40px 0 0 30%;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(160, 54, 54);
 
 }
 
@@ -39,10 +42,11 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: #F2D3BF;
+    font-size: 15pt;
  
 }
 main {
-    border: solid #6B6B2E  5px ;
+    /* border: solid #6B6B2E  5px ; */
     width: 100%;
     height: 100%;
     position: relative;
@@ -60,17 +64,33 @@ main {
     
 }
 #rightSide article {
-    padding: 10px;
+    padding: 20px;
 }
 #rightSide article img {
     width: 400px;
     height: 120px;
+    margin-top: 10px;
+    float: left;
+    padding-right: 10px;
     
+}
+#rightSide article p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 15pt;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+#rightSide article h3 {
+    font-size: 25pt;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(128, 44, 44);
 }
 
 #leftSide {
     width: 25%;
-    height: 835px;
+    height: 1050px;
     float: left;
     /* border: solid 5px; */
     background-color: gray;
@@ -89,16 +109,20 @@ main {
 
 #leftSide h3 {
     font-size: 23pt;
+    
 }
 #leftSide div ul li {
     padding: 5px;
 }
 #leftSide div ul li a {
-    font-size: 15pt;
+    font-size: 18pt;
     text-decoration: none;
     color: #F2D3BF;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 10px;
     
 }
+
 
 
 #bottum {
