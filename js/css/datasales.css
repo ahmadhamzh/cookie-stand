@@ -38,25 +38,41 @@ main {
     
 }
 main fieldset {
-    margin-left: 10%;
+    margin-left: 50px;
+    width: 90%;
+    border: solid 3px gray;
+    padding: 10px;
 
 }
-#BranchesSales table  {
-    margin: 20px;
-    margin-left: 20%;
-    border: grey 5px;
-    padding: 5px;
-    
+#newShopForm input:last-child {
+    width: 100px;
+    margin-left: 10px;
+    background-color: rgb(177, 76, 76);
 }
 #BranchesSales table  {
     margin: 20px;
-    margin-left: 20%;
+    margin-left: 100px;
     border: grey 5px;
+    background-color: khaki;
     padding: 5px;
+    border: 3px solid rgb(80, 78, 78);
+    
+}
+#BranchesSales table tr    {
+    
+    border: 2px solid rgb(80, 78, 78);
+}
+#BranchesSales table tr th   {
+    /* margin: 20px; */
+    /* margin-left: 20%; */
+    border: 1px solid rgb(80, 78, 78);
+    padding: 10px;
     
 }
 
 #BranchesSales table tr td {
     border: 1px solid gray;
+    text-align: center;
+    padding: 10px;
 
 }
